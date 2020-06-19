@@ -1,0 +1,80 @@
+.vertical-dots
+{
+    left:-8vw;
+    list-style: none;
+    display: block;
+    position: absolute;
+    top: 40%;
+    margin-top: -10px;
+    text-align: left;
+}
+.vertical-dots li
+{
+    position: relative;
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+}
+.vertical-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.vertical-dots li button:hover,
+.vertical-dots li button:focus
+{
+    outline: none;
+}
+.vertical-dots li button:hover:before,
+.vertical-dots li button:focus:before
+{
+    opacity: 1;
+}
+.vertical-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 11px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.vertical-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #c4b205;
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .vertical-dots
+    {
+        left: 0vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .vertical-dots
+    {
+        left: -1vw;
+    }
+}
