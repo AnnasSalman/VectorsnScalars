@@ -18,7 +18,6 @@ const PaginationElement = props => {
             opacity: 1,
             transform: "translate(0%, 0%)",
             from: { opacity: 1, transform: "translate(0px, 20%)" }
-            // opacity: 1, marginTop: '50%', from: {opacity: 0, marginTop: '0%'}
             })
 
     return(
@@ -56,7 +55,7 @@ const PaginationElement = props => {
 
 const useStyles = makeStyles((theme) => ({
     titleDiv:{
-        top: '20%',
+        top: '20vh',
         position: 'absolute',
         [theme.breakpoints.down('sm')]: {
             left: '50%',
@@ -77,13 +76,13 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     body:{
-
         textShadow: theme.palettewhite + ' 0px 0px 0px',
         marginTop: 15,
         width: '100%',
         [theme.breakpoints.down('sm')]: {
             textShadow: theme.palette.surface + ' 1px 1px 1px',
-            textAlign:'center'
+            textAlign:'center',
+            width: '400'
         },
 
     },
@@ -98,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
     },
     button:{
-        marginTop: '8%',
+        marginTop: '8vh',
         color: theme.palette.ter
     }
 }));

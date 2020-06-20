@@ -75,6 +75,6 @@
 @media only screen and (max-width: 600px) {
     .vertical-dots
     {
-        left: -1vw;
+        left: -10vw;
     }
 }

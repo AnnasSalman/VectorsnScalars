@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textShadow: theme.palette.surface + ' 2px 2px 2px',
         color: 'white',
-        fontFamily: 'Helvetica',
+        fontFamily: 'Arial',
         borderRadius: 0
     },
     menuItemIcon: {

@@ -1,11 +1,7 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import {makeStyles} from "@material-ui/core/styles";
 import {Grid, Box, Typography} from '@material-ui/core';
-import BeachAccess from '@material-ui/icons/BeachAccess';
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import SideButton from "./SideButton/SideButton";
 import SideMenuItem from "./SideMenuItem/SideMenuItem"
 import Flooring from '../../../resources/icons/woodenandvinyl.jpg'
@@ -71,7 +67,7 @@ const Indoor = () => {
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: 'white',
-        fontSize: '25'
+        fontSize: 40
     },
     sideButton: {
         backgroundColor: '#009e60'

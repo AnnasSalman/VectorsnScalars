@@ -8,7 +8,7 @@ const theme = createMuiTheme({
         onBackground: '#FFFFFF',
         background: '#121212',
         surface: '#121212'
-    },
+    }
 });
 
 theme.typography.body1 = {
@@ -22,7 +22,7 @@ theme.typography.body1 = {
 
 theme.typography.h2 = {
     [theme.breakpoints.up('xs')]: {
-        fontSize: '3.5rem',
+        fontSize: '2.5rem',
     },
     [theme.breakpoints.up('sm')]: {
         fontSize: '4.5rem',

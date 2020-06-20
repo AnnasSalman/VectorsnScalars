@@ -2,8 +2,7 @@ import React from 'react';
 import {makeStyles} from "@material-ui/core/styles";
 import {Grid, Box, Typography} from '@material-ui/core';
 import SideButton from "./SideButton/SideButton";
-import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
-
+import PeopleOutline from "@material-ui/icons/PeopleOutline";
 
 
 const About = () => {
@@ -22,7 +21,7 @@ const About = () => {
                 text='About'
                 className={[classes.sideButton]}
             >
-                <HeadsetMicIcon className={classes.icon}/>
+                <PeopleOutline className={classes.icon}/>
             </SideButton>
         </Box>
     );
@@ -31,7 +30,7 @@ const About = () => {
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: 'white',
-        fontSize: 25
+        fontSize: 40
     },
     sideButton:{
         backgroundColor: '#004225'

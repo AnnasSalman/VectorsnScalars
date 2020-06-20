@@ -5,15 +5,21 @@ import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
+import NavBarProducts from "./NavBar/NavBarProducts";
+import NavBarProjects from "./NavBar/NavBarProjects";
+import NavBarAbout from "./NavBar/NavBarAbout";
+import NavBarContact from "./NavBar/NavBarContact";
 import {useSpring, animated} from "react-spring";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
+import SideBarMobile from "./SideBarMobile/SideBarMobile";
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
     appBar:{
-        height: 120,
+        height: 130,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -21,13 +27,10 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             height: 100,
         },
-        [theme.breakpoints.down('sm')]: {
-            height: 80,
-        },
     },
     menu: {
         marginRight: theme.spacing(0),
-        color: 'white'
+        color: 'white',
     },
     menuButton: {
         fontSize: 40,
@@ -40,8 +43,10 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         color: 'white',
         [theme.breakpoints.down('sm')]: {
-            marginLeft: theme.spacing(1)
-        }
+            marginLeft: theme.spacing(1),
+        },
+
+
     },
     titleMid: {
         marginLeft: theme.spacing(1),
@@ -52,10 +57,37 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         color: theme.palette.pri
     },
+    nav:{
+        display: 'flex',
+        flexDirection: 'row'
+    }
+
 }));
 
 const Header = () => {
     const classes = useStyles();
+    const mdDown = useMediaQuery(theme => theme.breakpoints.down('sm'));
+
+    const smallNav = () => {
+        if(mdDown){
+            return{
+                logoLeft: <Box className={classes.menu}><SideBarMobile/></Box>,
+                logoBottom: null
+            }
+        }
+        else{
+            return{
+                logoLeft: null,
+                logoBottom:
+                    <Box className={classes.nav}>
+                        <NavBarProducts/>
+                        <NavBarProjects/>
+                        <NavBarContact/>
+                        <NavBarAbout/>
+                    </Box>
+            }
+        }
+    }
 
     const animImgProps = useSpring(
         {
@@ -72,21 +104,22 @@ const Header = () => {
             <AppBar elevation={0} position="absolute" className={classes.appBar}>
                 <Toolbar>
                     <animated.div style={animImgProps} className={classes.titleLeft}>
-                        <Typography component='div'>
-                            <Typography component='span' variant='h4' className={classes.titleLeft}>
-                                Vectors
+                        <Box className={classes.nav}>
+                            <Typography component='div'>
+                                <Typography component='span' variant='h4' className={classes.titleLeft}>
+                                    Vectors
+                                </Typography>
+                                <Typography component='span' variant='h4' className={classes.titleMid}>
+                                    n'
+                                </Typography>
+                                <Typography component='span' variant='h4' className={classes.titleRight}>
+                                    Scalars
+                                </Typography>
                             </Typography>
-                            <Typography component='span' variant='h4' className={classes.titleMid}>
-                                n'
-                            </Typography>
-                            <Typography component='span' variant='h4' className={classes.titleRight}>
-                                Scalars
-                            </Typography>
-                        </Typography>
+                        </Box>
+                        {smallNav().logoBottom}
                     </animated.div>
-                    <IconButton edge="end" className={classes.menu} aria-label="menu">
-                        {/*<MenuOpenRoundedIcon className={classes.menuButton}/>*/}
-                    </IconButton>
+                        {smallNav().logoLeft}
                 </Toolbar>
             </AppBar>
         </Box>

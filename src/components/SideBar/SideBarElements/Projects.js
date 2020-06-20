@@ -39,7 +39,7 @@ const Projects = () => {
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: 'white',
-        fontSize: 25
+        fontSize: 40
     },
     sideButton:{
         backgroundColor: '#228b22'

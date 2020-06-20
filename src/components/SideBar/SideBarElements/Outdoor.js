@@ -72,7 +72,7 @@ const Outdoor = () => {
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: 'white',
-        fontSize: '15'
+        fontSize: 40
     },
     items: {
     }
