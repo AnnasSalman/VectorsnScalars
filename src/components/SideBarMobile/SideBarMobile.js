@@ -4,32 +4,30 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import Collapse from '@material-ui/core/Collapse';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import StarBorder from '@material-ui/icons/StarBorder';
 import MenuIcon from '@material-ui/icons/Menu';
 import {withStyles} from "@material-ui/core";
+import PeopleOutline from "@material-ui/icons/PeopleOutline";
+import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
+import HomeWorkIcon from '@material-ui/icons/HomeWork';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import StoreMallDirectoryIcon from '@material-ui/icons/StoreMallDirectory';
+import menuItems from "../../constants/menuItems";
 
 const StyledListItem = withStyles({
     root: {
         backgroundColor: '#121212',
         "&$selected": {
             backgroundColor: "red"
-        }
+        },
     },
     selected: {}
 })(ListItem);
-
 
 const useStyles = makeStyles((theme)=>({
     list: {
@@ -55,25 +53,10 @@ const useStyles = makeStyles((theme)=>({
         }
     },
     listItem: {
-        backgroundColor: theme.palette.background
+        color: theme.palette.pri
     }
 
 }));
-
-const outdoorProducts = [
-    'Awnings',
-    'Car Parks',
-    'Fixed Structures',
-    'Garden Furniture',
-    'Retractable Structures',
-    'Sail Shades',]
-const indoorProducts = [
-    'Blinds',
-    'UPVC Doors & Windows',
-    'Wallpaper & Wallpanels',
-    'Wood Plastic Composite',
-    'Wooden & Vinyl Flooring'
-    ]
 
 export default function SideBarMobile() {
     const classes = useStyles();
@@ -118,16 +101,16 @@ export default function SideBarMobile() {
                 // }
                 className={classes.root}
             >
-                <StyledListItem button onClick={()=>handleClick('OUTDOOR')}>
-                    <ListItemIcon>
-                        <InboxIcon />
+                <StyledListItem button className={classes.listItem} onClick={()=>handleClick('OUTDOOR')}>
+                    <ListItemIcon className={classes.listItem}>
+                        <WbSunnyIcon />
                     </ListItemIcon>
                     <ListItemText primary="Outdoor Products" />
                     {openOutdoor ? <ExpandLess /> : <ExpandMore />}
                 </StyledListItem>
                 <Collapse in={openOutdoor} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                        {outdoorProducts.map((product)=>{
+                        {menuItems.products.outdoorProducts.map((product)=>{
                             return(
                                 <StyledListItem key={product}
                                           button
@@ -139,16 +122,16 @@ export default function SideBarMobile() {
                         })}
                     </List>
                 </Collapse>
-                <StyledListItem button onClick={()=>handleClick('INDOOR')}>
-                    <ListItemIcon>
-                        <InboxIcon />
+                <StyledListItem button className={classes.listItem} onClick={()=>handleClick('INDOOR')}>
+                    <ListItemIcon className={classes.listItem}>
+                        <HomeWorkIcon />
                     </ListItemIcon>
                     <ListItemText primary="Indoor Products" />
                     {openIndoor ? <ExpandLess /> : <ExpandMore />}
                 </StyledListItem>
                 <Collapse in={openIndoor} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                        {indoorProducts.map((product)=>{
+                        {menuItems.products.indoorProducts.map((product)=>{
                             return(
                                 <StyledListItem
                                     key={product}
@@ -161,21 +144,21 @@ export default function SideBarMobile() {
                         })}
                     </List>
                 </Collapse>
-                <StyledListItem button>
-                    <ListItemIcon>
-                        <SendIcon />
+                <StyledListItem className={classes.listItem} button>
+                    <ListItemIcon className={classes.listItem}>
+                        <StoreMallDirectoryIcon />
                     </ListItemIcon>
                     <ListItemText primary="Projects" />
                 </StyledListItem>
-                <StyledListItem button>
-                    <ListItemIcon>
-                        <DraftsIcon />
+                <StyledListItem button className={classes.listItem}>
+                    <ListItemIcon className={classes.listItem}>
+                        <PeopleOutline />
                     </ListItemIcon>
                     <ListItemText primary="About" />
                 </StyledListItem>
-                <StyledListItem button className={classes.ListItem}>
-                    <ListItemIcon>
-                        <DraftsIcon />
+                <StyledListItem button className={classes.listItem}>
+                    <ListItemIcon className={classes.listItem}>
+                        <HeadsetMicIcon />
                     </ListItemIcon>
                     <ListItemText primary="Contact us" />
                 </StyledListItem>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import {makeStyles} from "@material-ui/core/styles";
-import {Grid, Box, Typography} from '@material-ui/core';
+import {Box} from '@material-ui/core';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import SideButton from "./SideButton/SideButton";
 import SideMenuItem from "./SideMenuItem/SideMenuItem"

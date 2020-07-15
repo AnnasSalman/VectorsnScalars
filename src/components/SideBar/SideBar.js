@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Outdoor from "./SideBarElements/Outdoor";
 import {Box} from '@material-ui/core';
 import Indoor from "./SideBarElements/Indoor";
@@ -25,7 +25,7 @@ const SideBar = () => {
     return(
         <animated.div style={animProps}>
             <Box className={classes.sideBar}>
-                    <img src={logo} style={{
+                    <img src={logo} alt='' style={{
                         width:'100%',
                         height: '100%'
                     }}/>

@@ -21,10 +21,6 @@ export default function NavBarAbout() {
     const handleClick = (event) => {
     };
 
-    const handleClose = () => {
-    };
-
-
     return (
         <div>
             <Button

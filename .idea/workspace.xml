@@ -2,26 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b937fc-867b-4135-9256-eb4a29e597b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarAbout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarContact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarProjects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBarMobile/SideBarMobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/work-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/work-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddProductModal/AddProductModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AlertDialog/AlertDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Description/Description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Description/Description.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Feature/Feature.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Feature/Feature.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Company/Company.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Contact/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Links/Links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Projects/Project/Project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Projects/Projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductCardAdmin/ProductCardAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SignInSide/SignInSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/fbConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/menuItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/AboutScreen/AboutScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/AdminScreen/AdminScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/AdminScreen/ProductsScreen/ProductsScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/addImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/placeholderImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/productActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/productReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBarAbout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBarContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBarProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarProjects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PaginationElement/PaginationElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaginationElement/PaginationElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/ContactUs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Indoor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Indoor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Outdoor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Outdoor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/SideMenuItem/SideMenuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/SideMenuItem/SideMenuItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/SideButton/SideButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/SideBarElements/SideButton/SideButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBarMobile/SideBarMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBarMobile/SideBarMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SocialMediaBar/SocialMediaBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SocialMediaBar/SocialMediaBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/HomeScreen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/HomeScreen/HomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/HomeScreen/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/HomeScreen/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +78,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/NavBar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -60,10 +92,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Webstorm files\vns\src\resources\icons" />
       <recent name="D:\Webstorm files\vns\src\components\NavBar" />
       <recent name="D:\Webstorm files\vns\src\components" />
       <recent name="D:\Webstorm files\vns\src\img" />
-      <recent name="D:\Webstorm files\vns\src\resources\icons" />
       <recent name="D:\Webstorm files\vns\src\components\SideBar\SideBarElements" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -97,7 +129,13 @@
       <option name="presentableId" value="Default" />
       <updated>1592129398442</updated>
       <workItem from="1592129400567" duration="172878000" />
-      <workItem from="1592553430715" duration="60821000" />
+      <workItem from="1592553430715" duration="61736000" />
+      <workItem from="1592725495406" duration="66372000" />
+      <workItem from="1593013512353" duration="46530000" />
+      <workItem from="1593376037971" duration="1877000" />
+      <workItem from="1593591101692" duration="12947000" />
+      <workItem from="1594322429719" duration="79938000" />
+      <workItem from="1594733682351" duration="3496000" />
     </task>
     <task id="LOCAL-00001" summary="Home screen">
       <created>1592575143959</created>
@@ -106,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592575143959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Home screen">
+      <created>1592685602228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592685602228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,25 +162,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="Home screen" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="52" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592509100478">
+    <state x="175" y="0" key="#ESLint" timestamp="1594323150321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="350" y="52" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592509100478" />
-    <state x="231" y="0" key="CommitChangelistDialog2" timestamp="1592575139354">
+    <state x="175" y="0" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1594323150321" />
+    <state x="350" y="52" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592736872301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="231" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592575139354" />
-    <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1592150345307">
+    <state x="350" y="52" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592736872301" />
+    <state x="231" y="0" key="CommitChangelistDialog2" timestamp="1592685598064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592150345307" />
-    <state x="255" y="153" key="run.anything.popup" timestamp="1592666547429">
+    <state x="231" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592685598064" />
+    <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1593417354838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="255" y="153" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592666547429" />
-    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1592668852570">
+    <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593417354838" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1592685815065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592668852570" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592685815065" />
+    <state x="461" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592745889548">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="461" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1592745889548" />
+    <state x="255" y="153" key="run.anything.popup" timestamp="1593346977681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="255" y="153" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593346977681" />
+    <state x="262" y="-1" width="840" height="174" key="search.everywhere.popup" timestamp="1594653656889">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="262" y="-1" width="840" height="174" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594653656889" />
   </component>
 </project>

@@ -4,15 +4,14 @@ import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
 import NavBarProducts from "./NavBar/NavBarProducts";
 import NavBarProjects from "./NavBar/NavBarProjects";
 import NavBarAbout from "./NavBar/NavBarAbout";
 import NavBarContact from "./NavBar/NavBarContact";
 import {useSpring, animated} from "react-spring";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 import SideBarMobile from "./SideBarMobile/SideBarMobile";
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,6 +25,17 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "transparent",
         [theme.breakpoints.down('sm')]: {
             height: 100,
+        },
+    },
+    appBar1:{
+        height: 100,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        backgroundColor: "#383838",
+        opacity: 0.9,
+        [theme.breakpoints.down('sm')]: {
+            height: 70,
         },
     },
     menu: {
@@ -64,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const Header = () => {
+const Header = props => {
     const classes = useStyles();
     const mdDown = useMediaQuery(theme => theme.breakpoints.down('sm'));
 
@@ -101,10 +111,11 @@ const Header = () => {
 
     return (
         <Box boxShadow={0} className={classes.root}>
-            <AppBar elevation={0} position="absolute" className={classes.appBar}>
+            <AppBar elevation={0} position="fixed" className={(props.background==='header')?classes.appBar:classes.appBar1}>
                 <Toolbar>
                     <animated.div style={animImgProps} className={classes.titleLeft}>
                         <Box className={classes.nav}>
+                            <Link style={{textDecoration: 'none'}} to={'/'}>
                             <Typography component='div'>
                                 <Typography component='span' variant='h4' className={classes.titleLeft}>
                                     Vectors
@@ -116,6 +127,7 @@ const Header = () => {
                                     Scalars
                                 </Typography>
                             </Typography>
+                            </Link>
                         </Box>
                         {smallNav().logoBottom}
                     </animated.div>

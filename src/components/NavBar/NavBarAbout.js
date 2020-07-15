@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import {makeStyles} from "@material-ui/core/styles";
+import { Link } from 'react-router-dom'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -10,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         color: '#d1cbc7',
         "&:hover": {
             color: theme.palette.pri
-        }
+        },
+        textDecoration: 'none'
     },
 }));
 
@@ -18,19 +21,11 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBarAbout() {
     const classes = useStyles()
 
-    const handleClick = (event) => {
-    };
-
-    const handleClose = () => {
-    };
-
-
     return (
         <div>
             <Button
-                onClick={handleClick}
                 className={classes.button}>
-                About
+                <Link className={classes.button} to={'/about'}>About</Link>
             </Button>
         </div>
     );

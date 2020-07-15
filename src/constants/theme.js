@@ -7,7 +7,8 @@ const theme = createMuiTheme({
         pri: '#c4b205',
         onBackground: '#FFFFFF',
         background: '#121212',
-        surface: '#121212'
+        surface: '#121212',
+        secondaryText: '#b0b0b0'
     }
 });
 

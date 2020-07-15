@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import PaginationElement from "../../components/PaginationElement/PaginationElement";
 import {makeStyles} from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -7,13 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './slick-theme.css'
 import image from '../../img/work-5.jpg'
-import image2 from '../../img/image_1.jpg'
 import work4 from '../../img/work-4.jpg'
 import work6 from '../../img/work-6.jpg'
 import {Box} from "@material-ui/core";
 import SideBar from "../../components/SideBar/SideBar";
 import SocialMediaBar from "../../components/SocialMediaBar/SocialMediaBar";
-import {useSpring, animated} from 'react-spring';
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 
@@ -63,7 +61,7 @@ const HomeScreen = () => {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: '100%',
+        height: '100vh',
     },
     socialMedia: {
         position: 'absolute',

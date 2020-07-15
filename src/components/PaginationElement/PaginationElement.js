@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     body:{
-        textShadow: theme.palettewhite + ' 0px 0px 0px',
+        textShadow: 'white 0px 0px 0px',
         marginTop: 15,
         width: '100%',
         [theme.breakpoints.down('sm')]: {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Box} from '@material-ui/core'
-import {useTransition, animated, useSpring} from "react-spring";
+import {useTransition, animated} from "react-spring";
 import {makeStyles} from "@material-ui/core/styles";
 import Instagram from "@material-ui/icons/Instagram"
 import Facebook from "@material-ui/icons/Facebook"
@@ -10,18 +10,11 @@ import IconButton from '@material-ui/core/IconButton';
 const SocialMediaBar = () => {
     const classes = useStyles();
 
-    const props1 = useSpring(
-        {
-            config:{
-                tension: 120, friction: 14, mass: 1.5
-            },
-        })
-
     const instagram = <Instagram/>
     const facebook = <Facebook/>
     const twitter = <Twitter/>
 
-    const [items, set] = useState(
+    const [items] = useState(
         [
             {element: instagram, key: 1},
             {element: facebook, key: 2},

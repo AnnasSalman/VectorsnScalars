@@ -1,6 +1,6 @@
 import React from 'react';
 import {makeStyles} from "@material-ui/core/styles";
-import {Grid, Box, Typography} from '@material-ui/core';
+import {Box} from '@material-ui/core';
 import SideButton from "./SideButton/SideButton";
 import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
 
